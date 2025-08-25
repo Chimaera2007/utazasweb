@@ -106,7 +106,7 @@ function esemenykiir() {
 
     const imageDiv = document.createElement("div");
     imageDiv.classList.add("entry-image");
-    const imgSrc = `kepek/${kepForrasok[index % kepForrasok.length]}`;
+    const imgSrc = `usakiskepek/${kepForrasok[index % kepForrasok.length]}`;
     imageDiv.style.backgroundImage = `url(${imgSrc})`;
     imageDiv.style.cursor = "pointer";
     imageDiv.onclick = function () {
