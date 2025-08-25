@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New York-i Utazásnapló</title>
+    <style>
+        /* Alap stílusok */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f7fa;
+            background-image: linear-gradient(to bottom right, #f5f7fa, #e4e8f0);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        /* Fejléc */
+        header {
+            background: linear-gradient(to right, #0c2461, #1e3799, #4a69bd);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(to right, #e74c3c, #f39c12, #2ecc71);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Fő tartalom */
+        .content {
+            padding: 30px;
+        }
+
+        /* Naplóbejegyzések */
+        .entry {
+            display: flex;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            overflow: hidden;
+            background: white;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .entry:hover {
+            transform: translateY(-5px);
+        }
+
+        .entry-text {
+            flex: 2;
+            padding: 25px;
+        }
+
+        .entry-image {
+            flex: 1;
+            min-height: 250px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .entry:nth-child(odd) {
+            flex-direction: row;
+        }
+
+        .entry:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .cim {
+            color: #1e3799;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #f39c12;
+            padding-bottom: 5px;
+        }
+
+        .szoveg {
+            color: #555;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+
+        /* Lábléc */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0c2461;
+            color: white;
+            margin-top: 40px;
+        }
+
+        /* Reszponzív design */
+        @media (max-width: 768px) {
+
+            .entry,
+            .entry:nth-child(odd),
+            .entry:nth-child(even) {
+                flex-direction: column;
+            }
+
+            .entry-image {
+                min-height: 200px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Amerikai Utazásnapló</h1>
+        </header>
+
+        <div class="content" id="content">
+            <!-- A JavaScript ide fogja betölteni a naplóbejegyzéseket -->
+        </div>
+
+        <footer>
+            <p>&copy; 2025 - Amerikai Utazásnapló</p>
+        </footer>
+    </div>
+
+    <script src="usa.js"></script>
+</body>
+
+</html>
