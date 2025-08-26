@@ -1,0 +1,196 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: beige;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+.header{
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    height: 30vh;
+}
+
+#fejléckép{
+    width: 100vw;
+    height: 70vh;
+}
+
+.cimsor{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h11{
+    text-align: center;
+    font-variant: small-caps;
+    color: white;
+    text-shadow: 8px 8px 8px black;
+    font-size: 10vh;
+}
+
+.bg{
+    display: flex;
+    justify-content: center;
+}
+
+.zászlóbg{
+    width: 90vw;
+    height: 30vh;
+    background-color: #6e6e6e;
+    border: 3px black solid;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    margin: 0 auto 0 auto;
+}
+
+.zászló{
+    width: 17vw;
+    margin: 0.7vh;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 15px;
+    transition: .5s all ease;
+}
+
+.zászló:hover{
+    scale: 0.9;
+}
+
+.figcaption{
+    color: white;
+    font-weight: bold;
+}
+
+.figcaption{
+    margin: 0;
+}
+
+#time1, #time2, 
+#time3, #time4, #time5{
+    margin: 0;
+    color: white;
+    font-weight: bold;
+}
+
+.naplo{
+    width: 85vw;
+    margin: 2vh auto 0 auto;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+h1{
+    margin: 0;
+}
+
+h2{
+    margin: 0;
+}
+
+.kep{
+    width: 40vw;
+    height: 45vh;
+    margin: 1vh;
+    border: black solid 3px;
+    border-radius: 20px;
+    transition: 0.3s all ease;
+}
+
+.kep:hover{
+    box-shadow: 4px 4px 10px #333;
+}
+
+.szoveg{
+    text-align: left;
+}
+
+.zöld{
+    background-color: greenyellow;
+    font-weight: bold;
+}
+
+.utazásiidőbg{
+    margin: 0 auto 0 auto;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.utazasiido{
+    width: 80vw;
+    border: black 2px solid;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.utidocella{
+    border-radius: 5px;
+    border: #6e6e6e solid 1px;
+}
+
+.vége{
+    text-align: end;
+    margin-right: 1vw;
+    text-decoration: none;
+    transition: 0.5s all ease;
+    
+}
+
+.vége:active{
+    scale: 0.9;
+    color: #6e6e6e;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 500px){
+    #fejléckép{
+        height: 30vh;
+        width: 100%;
+    }
+
+    .cimsor{
+        height: 30vh;
+    }
+
+    .h11{
+        font-size: 5vh;
+        text-shadow: 3px 3px 3px black;
+    }
+
+
+    .zászlóbg{
+        flex-wrap: wrap;
+    }
+    .zászló{
+        width: 25vw;
+        box-shadow: none;
+    }
+
+    .kep{
+        width: 80vw;
+        height: 24vh;
+        margin: 1vh;
+        border: black solid 3px;
+        border-radius: 20px;
+    }
+
+    .vége{
+        visibility: hidden;
+    }
+}
